@@ -37,7 +37,7 @@ def aurea(a, b):
     
 
 
-# In[95]:
+# In[105]:
 
 
 a = input("Intervalo: [a,b].\na: ")
@@ -46,7 +46,7 @@ delta = input("Critério de parada Delta: ")
 formula = input("f(x): ")
 
 
-# In[96]:
+# In[106]:
 
 
 a = float(a)
@@ -60,6 +60,8 @@ while(parada>delta):
     i+=1
     [a,b,parada] = aurea(a,b)
     print("\n")
+    
+print("x* = {0}".format((a+b)/2))
 
 
 # In[88]:
