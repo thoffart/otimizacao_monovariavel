@@ -16,8 +16,10 @@ class metodo():
                 aux = self.b
             x = aux
             result2 = eval(self.fx)
-      #  if (aux != self.b && self.delta > deltaux/100):
-       #     calculaux(x,aux,re)
+        if result2 > result1:
+            print('p(', self.a, ') = ', result1)
+        else:
+            print('p(', x, ') = ', result2)
 
     def calcula(self):
         x = self.a
